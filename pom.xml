@@ -9,6 +9,7 @@
     <module>demo-commons</module>
     <module>demo-user</module>
     <module>demo-api</module>
+      <module>demo-agent</module>
   </modules>
   <build>
     <finalName>mydemo</finalName>

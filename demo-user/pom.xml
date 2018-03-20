@@ -70,5 +70,12 @@
 
     <build>
         <finalName>demo-user</finalName>
+        <plugins>
+            <!--Spring Boot应用提供了执行Maven操作-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 </project>

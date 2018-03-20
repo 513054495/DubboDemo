@@ -8,9 +8,10 @@ import java.lang.instrument.Instrumentation;
  * @createTime 2018-03-19 14:07
  */
 public class MyAgent {
-    public static void  permain(String agentOps, Instrumentation inst){
+    public static void  premain(String agentOps, Instrumentation inst){
         System.out.println("=========premain方法执行========");
         System.out.println(agentOps);
+        inst.addTransformer(new PerfMonXformer());
     }
 
     public static void premain(String agentOps) {
